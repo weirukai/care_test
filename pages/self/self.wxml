@@ -1,2 +1,32 @@
 <!--pages/self.wxml-->
-<text>pages/self.wxml</text>
+<view  class="container">
+<view  class="basic_info_container">
+<view class="avatarContainer">
+ <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image></view>
+
+<!--右边基本信息框-->
+<view class="info_right">
+<view class="info_item"><image class="info_image" src="../../images/name.png"></image><view>罗翔</view></view>
+<view class="info_item"><image class="info_image" src="../../images/sex.png"></image><view>男</view></view>
+<view class="info_item"><image class="info_image" src="../../images/age.png"></image><view>19岁</view></view>
+</view>
+<!--右边箭头-->
+<view class="arrowContainer"><image class="arrowImage" src="../../images/left.png"></image></view>
+</view>
+
+<!--基本信息结束,处方开始-->
+<view   class="prescriptionContainer">
+<!--采用循环渲染的方式-->
+<view wx:for="{{prescriptions}}" class="prescriptionItem" wx:key="item">
+<view class="textStyle">{{item.diagnosis}}</view>
+
+<view  class="prescriptionBottom"><view>{{item.doctorName}}</view> 
+<view>{{item.date}}</view>
+ </view>
+</view>
+
+
+</view>
+
+
+</view>

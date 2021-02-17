@@ -1,1 +1,75 @@
 /* pages/self.wxss */
+/*小程序中使用rpx做兼容*/
+.basic_info_container{
+height: 300rpx;
+width: 750rpx;
+background-color: #eee;
+display: flex;
+flex-direction: row;
+align-items: center;
+border-radius: 40rpx;
+justify-content: space-between;
+}
+.userinfo-avatar{
+  width: 138rpx;
+  height: 138rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+
+}
+.info_right{
+display: flex;
+flex-direction: column;
+min-height:50rpx ;
+margin-right: 100rpx;
+}
+.info_image{
+max-width: 50rpx;
+max-height: 50rpx;
+padding-right: 20rpx;
+}
+.info_item{
+display: flex;
+flex-direction: row;
+height: 60rpx;
+}
+.avatarContainer{
+
+  border-right: 1rpx solid #eee;
+
+}
+.arrowContainer{
+float: right;
+
+
+}
+.arrowImage{
+max-width: 100rpx;
+max-height: 100rpx;
+}
+.prescriptionContainer{
+
+display: flex;
+flex-direction: column;
+padding: 30rpx 40rpx  0 40rpx;
+}
+.prescriptionItem{
+height: 300rpx;
+border-radius: 30rpx;
+background-color: #eee;
+margin-bottom: 30rpx;
+background-image: url(https://www.tjh.com.cn/images/825381d857ba1493.jpg);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.textStyle{
+padding: 20rpx;
+color: #eee;
+}
+.prescriptionBottom{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 20rpx;
+}
