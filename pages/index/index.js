@@ -4,10 +4,65 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
+    gradientColor: {
+      '0%': '#9cdf9c',
+      '100%': '#1c801c',
+    },
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    postClasses:[],
+    SwiperUrls:['https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1618576833,631712544&fm=26&gp=0.jpg',
+    'https://images.unsplash.com/photo-1551214012-84f95e060dee?w=640',
+    'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'], //循环轮播的课程的地址
+    interval: 5000,
+    duration: 500,
+    indicatorDots: true,
+    indicatorColor: "#ffffff",
+    activecolor:"#00c758",
+    autoplay: true,
+    progresses:[
+      {
+        progress:17,//当前进度
+        ingredients:[
+          {
+            drugName:'0.9%氯化钠注射液',
+            content:'100ml'
+        },{
+          drugName:'利巴韦林注射液',
+          content:'0.100g'
+        },
+        {
+          drugName:'注射用盐酸头孢替安',
+          content:'0.800g'
+        }
+        ]
+
+
+      },
+      {
+        progress:89,//当前进度
+        ingredients:[
+          {
+            drugName:'0.9%氯化钠注射液',
+            content:'100ml'
+        },{
+          drugName:'利巴韦林注射液',
+          content:'0.100g'
+        },
+        {
+          drugName:'注射用盐酸头孢替安',
+          content:'0.800g'
+        }
+        ]
+
+
+      }
+
+
+    ]
+
+
   },
   // 事件处理函数
   bindViewTap() {

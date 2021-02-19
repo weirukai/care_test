@@ -18,7 +18,7 @@
 <view   class="prescriptionContainer">
 <!--采用循环渲染的方式-->
 <view wx:for="{{prescriptions}}" class="prescriptionItem" wx:key="item">
-<view class="textStyle">{{item.diagnosis}}</view>
+<view class="textStyle"><text>{{item.diagnosis}}</text></view>
 
 <view  class="prescriptionBottom"><view>{{item.doctorName}}</view> 
 <view>{{item.date}}</view>

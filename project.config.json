@@ -25,10 +25,11 @@
 		},
 		"useCompilerModule": false,
 		"userConfirmedUseCompilerModuleSwitch": false
+		
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.15.0",
-	"appid": "wx98dca21be0a27425",
+	"appid": "wxbe1790374c38ce0c",
 	"projectname": "Care_test",
 	"debugOptions": {
 		"hidedInDevtools": []

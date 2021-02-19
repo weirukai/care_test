@@ -10,7 +10,7 @@
     "navigationBarTitleText": "Care",
     "navigationBarTextStyle": "black"
   },
-  "style": "v2",
+  
   "tabBar": {
     "color": "#6e6d6b",
     "selectedColor": "#00c758",

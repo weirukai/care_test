@@ -1,4 +1,4 @@
-<!--index.wxml-->
+<!-- index.wxml
 <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
@@ -10,4 +10,34 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
+</view> -->
+<view class="container">
+
+<view class="swiperContainer">
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{activecolor}}" class="swiper">
+<!--此处还要等后台数据完善后补充-->
+  <swiper-item wx:for="{{SwiperUrls}}" wx:key ="item">
+    <image src="{{item}}" class="slide-image"   bindtap="toClassShow"></image>
+  </swiper-item>
+</swiper>
+</view>
+
+<view class="progressContainer">
+<view wx:for="{{progresses}}" class="progressItem" wx:key="item" wx:for-item="e">
+  <view class="ingredientsContainer">
+    <view wx:for="{{e.ingredients}}" class="drugItem" wx:key="index" wx:for-item="i">
+        <text>{{i.drugName}}</text>
+        <text>{{i.content}}</text>
+    </view>
+  </view>
+<view class="showProgress">
+<van-circle value="{{e.progress}}" text="{{e.progress}}%" color="{{gradientColor}}"/>
+</view>
+
+</view>
+
+
+
+
+</view>
 </view>

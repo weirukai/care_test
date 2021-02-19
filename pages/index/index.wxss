@@ -19,3 +19,50 @@
 .usermotto {
   margin-top: 200px;
 }
+.swiperContainer{
+  border-bottom: 5rpx solid #eee;
+  box-shadow: 10rpx 2rpx #eee;
+  height: 375rpx;
+  width: 750rpx;
+}
+.slide-image{
+width: 100%;
+height: 375rpx;
+}
+.swiper{
+height: inherit;
+}
+.progressContainer{
+
+
+
+}
+.progressItem{
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+border-radius: 20rpx;
+background-color: #eee;
+margin-top: 30rpx;
+border-radius: 30rpx;
+padding: 0 10rpx 0 20rpx;
+box-shadow: 5px 5px 20px #5aa55a;
+}
+.ingredientsContainer{
+display: flex;
+flex-direction: column;
+width: 500rpx;
+height: max-content;
+font-size:0.8rem ;
+}
+.showProgress{
+
+height: max-content;
+}
+.drugItem{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}

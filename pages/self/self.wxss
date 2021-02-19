@@ -56,9 +56,9 @@ padding: 30rpx 40rpx  0 40rpx;
 .prescriptionItem{
 height: 300rpx;
 border-radius: 30rpx;
-background-color: #eee;
+background-color: rgba(90, 165, 90, 0.7);
 margin-bottom: 30rpx;
-background-image: url(https://www.tjh.com.cn/images/825381d857ba1493.jpg);
+
 display: flex;
 flex-direction: column;
 justify-content: space-between;
