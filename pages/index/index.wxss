@@ -47,13 +47,13 @@ border-radius: 20rpx;
 background-color: #eee;
 margin-top: 30rpx;
 border-radius: 30rpx;
-padding: 0 10rpx 0 20rpx;
+padding: 0 10rpx 0 40rpx;
 box-shadow: 5px 5px 20px #5aa55a;
 }
 .ingredientsContainer{
 display: flex;
 flex-direction: column;
-width: 500rpx;
+width: 400rpx;
 height: max-content;
 font-size:0.8rem ;
 }

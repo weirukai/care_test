@@ -11,7 +11,7 @@
 <view class="info_item"><image class="info_image" src="../../images/age.png"></image><view>19岁</view></view>
 </view>
 <!--右边箭头-->
-<view class="arrowContainer"><image class="arrowImage" src="../../images/left.png"></image></view>
+<view class="arrowContainer" bindtap="toDetailInfo"><image class="arrowImage" src="../../images/left.png"></image></view>
 </view>
 
 <!--基本信息结束,处方开始-->

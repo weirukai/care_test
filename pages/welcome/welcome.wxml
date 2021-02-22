@@ -1,0 +1,19 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="containerWel">
+
+<!-- <view class="upContainer">
+
+</view> -->
+
+<van-overlay  show="{{!hasUserInfo}}" bind:click="onClickHide">
+<view  class="loginPage">
+<image src="../../images/infusion.png" class="bgImage"></image>
+<view class="buttonContainer" style="width:80%">
+<van-button  round type="info" open-type="getUserInfo" bindgetuserinfo="getUserInfo" size="large" color="#5aa55a">一键登录</van-button>
+</view>
+</view>
+</van-overlay>
+
+<view ></view>
+
+</view>

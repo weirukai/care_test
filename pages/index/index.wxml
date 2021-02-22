@@ -23,11 +23,12 @@
 </view>
 
 <view class="progressContainer">
+<van-divider contentPosition="center" borderColor="#5aa55a" >进度</van-divider>
 <view wx:for="{{progresses}}" class="progressItem" wx:key="item" wx:for-item="e">
   <view class="ingredientsContainer">
     <view wx:for="{{e.ingredients}}" class="drugItem" wx:key="index" wx:for-item="i">
         <text>{{i.drugName}}</text>
-        <text>{{i.content}}</text>
+        <text style="color:#999">{{i.content}}</text>
     </view>
   </view>
 <view class="showProgress">

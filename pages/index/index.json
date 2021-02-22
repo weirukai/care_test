@@ -1,5 +1,7 @@
 {
+  "navigationBarTitleText": "输液进度",
   "usingComponents": {
-    "van-circle":"../../miniprogram_npm/@vant/weapp/circle/index"
+    "van-circle":"../../miniprogram_npm/@vant/weapp/circle/index",
+    "van-divider":"../../miniprogram_npm/@vant/weapp/divider/index"
   }
 }

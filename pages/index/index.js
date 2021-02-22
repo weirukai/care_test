@@ -5,21 +5,22 @@ const app = getApp()
 Page({
   data: {
     gradientColor: {
-      '0%': '#9cdf9c',
+      '0%': '#82DCF5',
       '100%': '#1c801c',
     },
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     postClasses:[],
-    SwiperUrls:['https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1618576833,631712544&fm=26&gp=0.jpg',
-    'https://images.unsplash.com/photo-1551214012-84f95e060dee?w=640',
-    'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'], //循环轮播的课程的地址
+    SwiperUrls:[
+      'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3002704107,1198614244&fm=26&gp=0.jpg',
+      'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1618576833,631712544&fm=26&gp=0.jpg',
+    'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1239128477,3469814366&fm=26&gp=0.jpg'], //循环轮播的课程的地址
     interval: 5000,
     duration: 500,
     indicatorDots: true,
     indicatorColor: "#ffffff",
-    activecolor:"#00c758",
+    activecolor:"#5aa55a",
     autoplay: true,
     progresses:[
       {

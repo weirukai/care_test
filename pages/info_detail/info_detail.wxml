@@ -1,0 +1,94 @@
+<!--pages/info_detail/info_detail.wxml-->
+<!-- <view  class="container">
+
+<van-cell-group>
+  <van-cell title="单元格" value="内容" />
+  <van-cell title="单元格" value="内容"  />
+  <van-cell title="单元格" is-link value="内容" arrow-direction="right" />
+</van-cell-group>
+
+</view> -->
+
+
+
+<!--pages/modifyInfo.wxml-->
+<view  class="containerOut">
+<view class="modifyItem" bindtap="changeImg">
+<!--头像-->
+<view>头像</view>
+<view class="detail" >
+<image class="userImage" src="{{myInfo.userImageSrc}}"></image>
+<van-icon name="arrow" color="#00c758" />
+</view>
+</view>
+<view class="space2"></view>
+
+<view class="modifyItem" id="昵称" bindtap="showDialog">
+
+<!--ID-->
+<view id="昵称">姓名</view>
+<view class="detail" id="昵称">
+
+<view class="itemValue">{{myInfo.id}}</view>
+<van-icon name="arrow" color="#00c758" />
+</view>
+</view>
+
+<view class="space2"></view>
+
+<view class="modifyItem" id="年龄" bindtap="showDialog">
+<!---motto-->
+
+<view id="年龄">年龄</view>
+
+<view class="detail" id="年龄">
+<view class="itemValue">{{myInfo.age}}</view>
+<van-icon name="arrow" color="#00c758" />
+</view>
+</view>
+<view class="space2"></view>
+<view class="modifyItem" id="性别" bindtap="showDialog">
+<!---年级-->
+
+<view id="性别">性别</view>
+
+<view class="detail" id="性别">
+<view class="itemValue">{{myInfo.sex}}</view>
+<van-icon name="arrow" color="#00c758" />
+</view>
+</view>
+<view class="space2"></view>
+<view class="modifyItem" id="电话" bindtap="showDialog">
+<!--教材版本-->
+
+<view id="电话">电话</view>
+
+<view class="detail" id="电话">
+<view class="itemValue">{{myInfo.phone}}</view>
+<van-icon name="arrow" color="#00c758" />
+</view>
+</view>
+<view class="space2"></view>
+<view class="modifyItem"  id="住址" bindtap="showDialog">
+<!--学校-->
+
+<view id="住址">住址</view>
+
+<view class="detail" id="住址">
+<view class="itemValue">{{myInfo.location}}</view>
+<van-icon name="arrow" color="#00c758" />
+</view>
+</view>
+<van-dialog2 show="{{showDialog}}"  bindtap="closeDialog">
+<view class="inputContainer">
+<view class="dialogFlexItem"><view class="dialogTitle">修改{{dialogTitle}}</view></view>
+<view class="dialogFlexItem"><input  class="input" placeholder="请输入" bindinput="bindInput" value="{{inputTxt}}" maxlength="10"></input></view>
+<view class="dialogFlexItem">
+<view class="dialogButtonContainer">
+<view class="dialogButton" bindtap="closeDialog">取消</view>
+<view class="dialogButton" style="color:#00c758" bindtap="changeInfo">确定</view>
+</view>
+</view>
+</view>
+</van-dialog2>
+</view>

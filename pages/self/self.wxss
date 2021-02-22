@@ -32,6 +32,7 @@ padding-right: 20rpx;
 display: flex;
 flex-direction: row;
 height: 60rpx;
+align-items: center;
 }
 .avatarContainer{
 
@@ -62,10 +63,13 @@ margin-bottom: 30rpx;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
+box-shadow: 5px 5px 10px #5aa55a;
 }
 .textStyle{
 padding: 20rpx;
 color: #eee;
+
+text-indent: 2rem;
 }
 .prescriptionBottom{
 display: flex;

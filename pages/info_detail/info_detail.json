@@ -1,0 +1,13 @@
+{
+
+  "navigationBarTitleText": "详细信息",
+  "usingComponents": {
+    "van-cell":"../../miniprogram_npm/@vant/weapp/cell/index",
+    "van-cell-group":"../../miniprogram_npm/@vant/weapp/cell-group/index",
+    "van-icon":"/miniprogram_npm/@vant/weapp/icon/index",
+    "van-popup":"/miniprogram_npm/@vant/weapp/popup/index",
+    "van-dialog":"/miniprogram_npm/@vant/weapp/dialog/index",
+    "van-dialog2":"/miniprogram_npm/@vant/weapp/dialog2/dialog2"
+   
+  }
+}

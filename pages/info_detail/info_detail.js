@@ -1,43 +1,21 @@
-// pages/self.js
+// pages/info_detail/info_detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userInfo:{
-      avatarUrl:'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3641306367,2787304394&fm=26&gp=0.jpg'
+    myInfo:{
+      id:"罗翔",
+      age:"39",
+      sex:"男",
+      phone:"13817659887",
+      userImageSrc:"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3641306367,2787304394&fm=26&gp=0.jpg",
+      location:"湖北省武汉市洪山区珞喻路1037号",
+      inputTxt:''
     },
-    prescriptions:[
-      //模拟数据，真实数据调用医院服务器数据
-      {
-        doctorName:"钟南山",
-        diagnosis:"新冠肺炎，建议入院治疗",
-        date:"2021-02-15"
-      },
-      {
-        doctorName:"钟南山",
-        diagnosis:"新冠肺炎，建议入院治疗,先进行初期药物治疗，无效进行激素治疗，EMCO等凑字数检擦字数",
-        date:"2021-02-15"
-      }
-    ]
+
   },
-
-
-toDetailInfo:function()
-{
-
-  wx.navigateTo({
-    url:'/pages/info_detail/info_detail',
-    success:function(res){
-      //成功回调
-    }
-  }
-  )
-
-
-},
-
 
   /**
    * 生命周期函数--监听页面加载
