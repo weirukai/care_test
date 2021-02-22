@@ -34,11 +34,6 @@
 <view class="showProgress">
 <van-circle value="{{e.progress}}" text="{{e.progress}}%" color="{{gradientColor}}"/>
 </view>
-
 </view>
-
-
-
-
 </view>
 </view>

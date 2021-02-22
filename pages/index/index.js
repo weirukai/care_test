@@ -73,6 +73,7 @@ Page({
   },
   onLoad() {
     if (app.globalData.userInfo) {
+      //说明登录成功了
       this.setData({
         userInfo: app.globalData.userInfo,
         hasUserInfo: true

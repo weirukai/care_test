@@ -1,16 +1,17 @@
 {
   "pages": [
+    "pages/welcome/welcome",
     "pages/index/index",
     "pages/logs/logs",
     "pages/self/self",
     "pages/info_detail/info_detail"
+  
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Care",
     "navigationBarTextStyle": "black"
-    
   },
   "tabBar": {
     "color": "#6e6d6b",
